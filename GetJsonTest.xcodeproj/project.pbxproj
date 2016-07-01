@@ -15,6 +15,7 @@
 		B64F0F5E1D2668FA00DD8E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64F0F5C1D2668FA00DD8E4F /* LaunchScreen.storyboard */; };
 		B64F0F691D2668FA00DD8E4F /* GetJsonTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F0F681D2668FA00DD8E4F /* GetJsonTestTests.m */; };
 		B64F0F741D2668FA00DD8E4F /* GetJsonTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F0F731D2668FA00DD8E4F /* GetJsonTestUITests.m */; };
+		B64F0F831D26690900DD8E4F /* GetJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F0F821D26690900DD8E4F /* GetJson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B64F0F6F1D2668FA00DD8E4F /* GetJsonTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetJsonTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64F0F731D2668FA00DD8E4F /* GetJsonTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetJsonTestUITests.m; sourceTree = "<group>"; };
 		B64F0F751D2668FA00DD8E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64F0F811D26690900DD8E4F /* GetJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetJson.h; sourceTree = "<group>"; };
+		B64F0F821D26690900DD8E4F /* GetJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetJson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		B64F0F4D1D2668FA00DD8E4F /* GetJsonTest */ = {
 			isa = PBXGroup;
 			children = (
+				B64F0F811D26690900DD8E4F /* GetJson.h */,
+				B64F0F821D26690900DD8E4F /* GetJson.m */,
 				B64F0F511D2668FA00DD8E4F /* AppDelegate.h */,
 				B64F0F521D2668FA00DD8E4F /* AppDelegate.m */,
 				B64F0F541D2668FA00DD8E4F /* ViewController.h */,
@@ -272,6 +277,7 @@
 			files = (
 				B64F0F561D2668FA00DD8E4F /* ViewController.m in Sources */,
 				B64F0F531D2668FA00DD8E4F /* AppDelegate.m in Sources */,
+				B64F0F831D26690900DD8E4F /* GetJson.m in Sources */,
 				B64F0F501D2668FA00DD8E4F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
