@@ -10,7 +10,7 @@
 
 @interface GetJson : NSObject
 
-+ (void)getJsonWithTarget:(id)target Action:(SEL)action URL:(NSString *)urlstring;
++ (void)getJsonWithTarget:(id)target Action:(SEL)action URL:(NSString *)urlstring Name:(NSString *)name;
 
 + (NSArray *)getJsonWithURL:(NSString *)urlstring;
 

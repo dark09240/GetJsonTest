@@ -10,9 +10,9 @@
 
 @implementation GetJson
 
-+ (void)getJsonWithTarget:(id)target Action:(SEL)action URL:(NSString *)urlstring {
++ (void)getJsonWithTarget:(id)target Action:(SEL)action URL:(NSString *)urlstring Name:(NSString *)name {
     
-    [[NSNotificationCenter defaultCenter]addObserver:target selector:action name:@"GetJson" object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:target selector:action name:name object:nil];
     
     NSURL *url = [NSURL URLWithString:urlstring];
     
@@ -25,7 +25,7 @@
             
             NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
             
-            [[NSNotificationCenter defaultCenter]postNotificationName:@"GetJson" object:jsonArray];
+            [[NSNotificationCenter defaultCenter]postNotificationName:name object:jsonArray];
             
         }
     }];
