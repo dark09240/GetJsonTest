@@ -27,6 +27,8 @@
             
             [[NSNotificationCenter defaultCenter]postNotificationName:name object:jsonArray];
             
+            [[NSNotificationCenter defaultCenter]removeObserver:target name:name object:nil];
+            
         }
     }];
     
