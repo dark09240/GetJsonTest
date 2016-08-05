@@ -50,4 +50,28 @@
     
 }
 
++ (void)getJsonWithURL:(NSString *)urlstring Completion:(void(^)(NSArray *))completion {
+
+    NSURL *url = [NSURL URLWithString:urlstring];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
+    
+        if (error == nil) {
+            
+            NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+            
+            completion(jsonArray);
+            
+        }
+    
+    }];
+
+    [dataTask resume];
+    
+}
+
 @end
