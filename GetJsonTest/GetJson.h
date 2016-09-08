@@ -10,8 +10,12 @@
 
 @interface GetJson : NSObject
 
-+ (void)getJsonWithTarget:(id)target Action:(SEL)action URL:(NSString *)urlstring Name:(NSString *)name;
+NS_ASSUME_NONNULL_BEGIN
 
 + (NSArray *)getJsonWithURL:(NSString *)urlstring;
+
++ (void)getJsonWithURL:(NSString *)urlstring Completion:(void(^)(NSArray * __nullable array, NSError * __nullable error))completion;
+
+NS_ASSUME_NONNULL_END
 
 @end
