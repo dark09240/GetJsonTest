@@ -16,6 +16,7 @@
 		B64F0F691D2668FA00DD8E4F /* GetJsonTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F0F681D2668FA00DD8E4F /* GetJsonTestTests.m */; };
 		B64F0F741D2668FA00DD8E4F /* GetJsonTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F0F731D2668FA00DD8E4F /* GetJsonTestUITests.m */; };
 		B64F0F831D26690900DD8E4F /* GetJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F0F821D26690900DD8E4F /* GetJson.m */; };
+		B6D93BCF1D93649A0078F4C7 /* NSURL+GetJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D93BCE1D93649A0078F4C7 /* NSURL+GetJson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B64F0F751D2668FA00DD8E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64F0F811D26690900DD8E4F /* GetJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetJson.h; sourceTree = "<group>"; };
 		B64F0F821D26690900DD8E4F /* GetJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetJson.m; sourceTree = "<group>"; };
+		B6D93BCD1D93649A0078F4C7 /* NSURL+GetJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+GetJson.h"; sourceTree = "<group>"; };
+		B6D93BCE1D93649A0078F4C7 /* NSURL+GetJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+GetJson.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 		B64F0F4D1D2668FA00DD8E4F /* GetJsonTest */ = {
 			isa = PBXGroup;
 			children = (
+				B6D93BCD1D93649A0078F4C7 /* NSURL+GetJson.h */,
+				B6D93BCE1D93649A0078F4C7 /* NSURL+GetJson.m */,
 				B64F0F811D26690900DD8E4F /* GetJson.h */,
 				B64F0F821D26690900DD8E4F /* GetJson.m */,
 				B64F0F511D2668FA00DD8E4F /* AppDelegate.h */,
@@ -278,6 +283,7 @@
 				B64F0F561D2668FA00DD8E4F /* ViewController.m in Sources */,
 				B64F0F531D2668FA00DD8E4F /* AppDelegate.m in Sources */,
 				B64F0F831D26690900DD8E4F /* GetJson.m in Sources */,
+				B6D93BCF1D93649A0078F4C7 /* NSURL+GetJson.m in Sources */,
 				B64F0F501D2668FA00DD8E4F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +510,7 @@
 				B64F0F7A1D2668FA00DD8E4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B64F0F7B1D2668FA00DD8E4F /* Build configuration list for PBXNativeTarget "GetJsonTestTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +519,7 @@
 				B64F0F7D1D2668FA00DD8E4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B64F0F7E1D2668FA00DD8E4F /* Build configuration list for PBXNativeTarget "GetJsonTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +528,7 @@
 				B64F0F801D2668FA00DD8E4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
